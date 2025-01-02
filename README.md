@@ -27,7 +27,7 @@ pip install -r requirements.txt
 Requirements:
 - hmmlearn==0.3.0
 - scikit-learn==1.2.2 (The correct scikit-learn version is **ESSENTIAL** to use models)
-- biopython>=1.81
+- biopython>=1.83
 - numpy>=1.23.5
 - pandas>=1.5.3
 - bacdive>=0.2 (only used in model training)
