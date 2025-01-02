@@ -16,7 +16,14 @@ Reference:
 # Quick start
 ## 1. Install package
 
-Clone the repo, create a virtual environment, then install the package and its requirements:
+Requirements: 
+- **Python version >=3.8.16 and <3.12**
+
+Optional:
+- prodigal ([github.com/hyattpd/Prodigal](https://github.com/hyattpd/Prodigal)) for predicting protein sequences from genomes
+- ncbi-genome-download ([github.com/kblin/ncbi-genome-download](https://github.com/kblin/ncbi-genome-download)) for downloading genomes from GenBank
+
+Install: clone the repo, create a virtual environment, then install the package and its requirements:
 ```shell
 git clone https://github.com/cultivarium/GenomeSPOT.git
 cd GenomeSPOT
@@ -24,17 +31,14 @@ pip install .
 pip install -r requirements.txt
 ```
 
-Requirements:
+Note that the following package versions must be used:
 - hmmlearn==0.3.0
 - scikit-learn==1.2.2 (The correct scikit-learn version is **ESSENTIAL** to use models)
-- biopython>=1.81
+- biopython>=1.83
 - numpy>=1.23.5
 - pandas>=1.5.3
 - bacdive>=0.2 (only used in model training)
 
-Recommended:
-- ncbi-genome-download ([github.com/kblin/ncbi-genome-download](https://github.com/kblin/ncbi-genome-download)) for downloading genomes from GenBank
-- prodigal ([github.com/hyattpd/Prodigal](https://github.com/hyattpd/Prodigal)) for predicting protein sequences from genomes
 
 ## 2. Run prediction
 
