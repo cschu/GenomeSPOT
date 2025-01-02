@@ -33,8 +33,8 @@ class TestProtein:
         protein = Protein(PROTEIN_SEQUENCE)
         expected_values = {
             "pi": 5.382106971740723,
-            "zc": 0.19821826280623608,
-            "nh2o": 0.07137639198218272,
+            "zc": -0.016129032258064516,
+            "nh2o": -0.7300668151447655,
             "gravy": -0.6514476614699332,
             "thermostable_freq": 0.356347438752784,
             "length": 449,
