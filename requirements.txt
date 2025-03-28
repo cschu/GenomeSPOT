@@ -12,7 +12,7 @@ Babel==2.13.1
 bacdive==0.3.1
 backcall==0.2.0
 beautifulsoup4==4.12.2
-biopython==1.81
+biopython>=1.83
 black==23.11.0
 bleach==6.1.0
 certifi==2023.11.17
