@@ -14,11 +14,11 @@ RUN apt-get install -y wget python3-pip python-is-python3 git dirmngr gnupg ca-c
 
 RUN apt clean
 
-RUN mkdir -p /opt/software
-WORKDIR /opt/software
+ADD LICENSE README.md requirements.txt setup.cfg setup.py /opt/software/genomespot/
+ADD genome_spot /opt/software/genomespot/genome_spot/
+ADD data /opt/software/genomespot/data/
+ADD models /opt/software/genomespot/models/
 
-RUN git clone https://github.com/cultivarium/GenomeSPOT.git && \
-    cd GenomeSPOT && \
-    pip install . && \
-    pip install -r requirements.txt
-
+RUN cd /opt/software/genomespot/ && \
+	pip install . && \
+	pip install -r requirements.txt
