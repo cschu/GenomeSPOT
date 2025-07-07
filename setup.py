@@ -33,4 +33,9 @@ setup(
         "pytest>=7.4.3",
     ],
     zip_safe=False,
+    entry_points={
+        "console_scripts": [
+            "genomespot=genome_spot.genome_spot:main",
+        ],
+    },
 )
